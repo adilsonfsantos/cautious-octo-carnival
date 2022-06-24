@@ -19,9 +19,9 @@ permalink: "/projetos/{{page.fileSlug}}/"
     </div>
       <div class="post__splash">
       <div class="post__splash--container">
-      {% assign picture = image | prepend : "src/" %}
-      {% images picture, 'Alt text test', "post__splash--picture", "post__splash--image" %}
-      {% images picture, 'Alt text test', "post__splash--picture", "post__splash--image" %}
+      {% assign picture = image | prepend : "src" %}
+      {% images picture, "Alt text test", "post__splash--picture", "post__splash--image" %}
+      {% images picture, "Alt text test", "post__splash--picture", "post__splash--image" %}
       </div>
     </div>
     <div class="post__hero">

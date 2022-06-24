@@ -1,7 +1,7 @@
 ---
 title: Fundação Maria Luisa e Oscar Americano
 date: 2018-08-22T14:42:00.000Z
-image: /assets/images/oscar-americano-wide.png
+image: /assets/images/fundacao-jornada-usuario-final.png
 description: >-
   Conceito de redesign para o site da Fundação Maria Luisa e Oscar Americano.
 keywords:
@@ -63,7 +63,5 @@ Outro problema era a usabilidade, pois ao mapear a jornada do usuário percebemo
 Então decidimos simplificar a distribuição das páginas e ordenar o conteúdo de forma lógica, dando destaque as informações mais importantes.
 
 Primeiramente decidimos simplificar a distribuição das páginas e ordenar o conteúdo de forma lógica, dando destaque as informações mais importantes.
-
-{% images "src/assets/images/fundacao-jornada-usuario-final.png", "Mapa da jornada do usuário final.", "post__photo", "post__photo--image" %}
 
 Para o desenvolvimento foi utilizado apenas HTML5 e CSS3, utilizando o conceito de mobile-first junto com técnicas de CSS como flexbox e grid para trazer responsividade para a interface.

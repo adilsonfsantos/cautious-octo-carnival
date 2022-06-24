@@ -4,6 +4,7 @@ const xmlFiltersPlugin = require("eleventy-xml-plugin");
 const mila = require("markdown-it-link-attributes");
 
 const Image = require("@11ty/eleventy-img");
+const outdent = require('outdent');
 
 async function imageShortcode(src, alt, classParent, classDescendent, sizes = "100vw") {
   if(alt === undefined) {
@@ -26,7 +27,9 @@ async function imageShortcode(src, alt, classParent, classDescendent, sizes = "1
   let lowsrc = metadata.jpeg[0];
   let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
-  return `<picture class="lazy ${classParent}">
+  console.log({src}, {alt}, {classParent}, {classDescendent}, {sizes});
+
+  return outdent`<picture class="lazy ${classParent}">
     ${Object.values(metadata).map(imageFormat => {
       return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
     }).join("\n")}
